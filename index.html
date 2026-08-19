@@ -64,21 +64,15 @@
                     <input type="text" id="tiktokUrl" placeholder="https://v.tiktok.com/..." 
                         class="w-full px-5 py-4 bg-slate-950/80 border border-slate-800 rounded-2xl focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 text-white placeholder-slate-600 text-sm transition-all shadow-inner">
                 </div>
-                
-                <button id="downloadBtn <script>
+                <button id="downloadBtn" onclick="openAdAndFetch()" class="w-full py-4 bg-gradient-to-r from-rose-600 via-pink-600 to-rose-600 hover:opacity-90 font-bold rounded-2xl transition-all active:scale-95 flex items-center justify-center space-x-2">
+    <span>Extract Media</span>
+    <script>
 function openAdAndFetch() {
     window.open('https://omg10.com/4/11605228', '_blank');
     fetchVideo();
 }
-                    </script>
+    </script>
                     
-                    class="w-full py-4 bg-gradient-to-r from-rose-600 via-pink-600 to-violet-600 hover:opacity-90 font-bold rounded-2xl transition-all transform active:scale-[0.98] text-white text-sm tracking-wide neon-glow flex items-center justify-center gap-2">
-                    <span>Extract Media</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </button>
-            </div>
-
-            <!-- Loader State -->
             <div id="loadingText" class="mt-6 text-center hidden">
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-rose-400 text-xs font-medium animate-pulse">
                     <div class="w-2 h-2 rounded-full bg-rose-500 animate-bounce"></div>
